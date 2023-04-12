@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Vision NYC</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://kit.fontawesome.com/fa293528aa.js" crossorigin="anonymous"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <div class="hero">
+
+         <nav>
+            <div class="logo">
+               <a href="#"><img src="img/zenNYC.png" alt="logo"></a>
+            </div>
+            <div class="toggle">
+               <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="menu">
+               <li><a href="#">home.</a></li>
+               <li><a href="a-bestof.html">best of.</a></li>
+               <li><a href="b-theboroughs.html">the boroughs.</a></li>
+            </ul>
+         </nav>
+
+         <!--===============Banner================-->
+         <section class="banner">
+            <div class="banner-text-item">
+               <div class="banner-heading">
+                  <h1>It’s been waiting for you!</h1>
+               </div>
+            </div>
+         </section>
+
+         <!--===============Footer================-->
+         <footer>
+            <div class="footer-content">
+              <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+              </ul>
+            </div>
+        
+            <div class="footer-bottom">
+              <p>Copyright &copy <span id="year"></span> <a href="#">John Benedict Bolivar</a> </p>
+            </div>
+          </footer>
+
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script>
+         $(function(){
+            $(".toggle").on("click", function(){
+               if($(".menu").hasClass("active")){
+                  $(".menu").removeClass("active");
+                  $(this).find("a").html("<i class='fa-solid fa-bars'></i>");
+               } else {
+                  $(".menu").addClass("active");
+                  $(this).find("a").html("<i class='fa-solid fa-xmark'></i>");
+               }
+            });
+         });
+      </script>
+
+   </body>
+</html>
+

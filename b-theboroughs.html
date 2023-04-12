@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Best of NYC</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://kit.fontawesome.com/fa293528aa.js" crossorigin="anonymous"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <div class="hero">
+
+         <nav>
+            <div class="logo">
+               <a href="index.html"><img src="img/zenNYC.png" alt="logo"></a>
+            </div>
+            <div class="toggle">
+               <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="menu">
+               <li><a href="index.html">home.</a></li>
+               <li><a href="a-bestof.html">best of.</a></li>
+               <li><a href="#">the boroughs.</a></li>
+            </ul>
+         </nav>
+
+         <div class="gallery-image">
+            <div class="img-box">
+              <img src="https://images.nycgo.com/image/fetch/q_auto:eco,c_fill,f_auto,w_780/https://www.nycgo.com/images/uploads/TC21_default_760x420_2x.jpg" alt="" />
+              <div class="transparent-box">
+                <div class="caption">
+                  <p>The Bronx</p>
+                </div>
+              </div> 
+            </div>
+            <div class="img-box">
+              <img src="https://www.nycgo.com/images/venues/63561/hudson-yards-manhattan-nyc-related-oxford-upper-level-view-through-the-vessel---courtesy-of-forbes-massie-heatherwick-studio.jpg" alt="" />
+              <div class="transparent-box">
+                <div class="caption">
+                  <p>Brooklyn</p>
+                </div>
+              </div>
+            </div>
+            <div class="img-box">
+              <img src="https://www.nycgo.com/images/uploads/Gansevoort-Meatpacking-Manhattan-Gornik-Robinette-16.jpg" alt="" />
+              <div class="transparent-box">
+                <div class="caption">
+                  <p>Manhattan</p>
+                </div>
+              </div>
+            </div>
+            <div class="img-box">
+              <img src="https://www.nycgo.com/images/venues/5310/high-bridge-bronx-tagger-yancey-iv-8605.jpg" alt="" />
+              <div class="transparent-box">
+                <div class="caption">
+                  <p>Queens</p>
+                </div>
+              </div> 
+            </div>
+            <div class="img-box">
+              <img src="https://www.nycgo.com/images/venues/2215/spirit_of_new_york_2.jpg" alt="" />
+              <div class="transparent-box">
+                <div class="caption">
+                  <p>Staten Island</p>
+                </div>
+              </div> 
+            </div>
+         </div>
+
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script>
+         $(function(){
+            $(".toggle").on("click", function(){
+               if($(".menu").hasClass("active")){
+                  $(".menu").removeClass("active");
+                  $(this).find("a").html("<i class='fa-solid fa-bars'></i>");
+               } else {
+                  $(".menu").addClass("active");
+                  $(this).find("a").html("<i class='fa-solid fa-xmark'></i>");
+               }
+            });
+         });
+      </script>
+
+   </body>
+</html>
+

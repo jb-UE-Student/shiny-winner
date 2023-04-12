@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Best of NYC</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://kit.fontawesome.com/fa293528aa.js" crossorigin="anonymous"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <div class="hero">
+
+         <nav>
+            <div class="logo">
+               <a href="index.html"><img src="img/zenNYC.png" alt="logo"></a>
+            </div>
+            <div class="toggle">
+               <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul class="menu">
+               <li><a href="index.html">home.</a></li>
+               <li><a href="#">best of.</a></li>
+               <li><a href="b-theboroughs.html">the boroughs.</a></li>
+            </ul>
+         </nav>
+
+         <div class="gallery-image">
+            <div class="img-box">
+              <img src="https://images.pexels.com/photos/5847768/pexels-photo-5847768.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" />
+              <div class="transparent-box">
+                <div class="caption">
+                  <p>Empire State Building</p>
+                  <p class="opacity-low">Attraction</p>
+                </div>
+              </div> 
+            </div>
+            <div class="img-box">
+              <img src="https://images.pexels.com/photos/1919322/pexels-photo-1919322.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
+              <div class="transparent-box">
+                <div class="caption">
+                  <p>9/11 Memorial & Museum</p>
+                  <p class="opacity-low">Museums & Galleries</p>
+                </div>
+              </div>
+            </div>
+            <div class="img-box">
+              <img src="https://www.nycgo.com/images/venues/145/statue-of-liberty-photo-christopher-postlewaite-nyc-and-company-7396-2.jpg" alt="" />
+              <div class="transparent-box">
+                <div class="caption">
+                  <p>Statue of Liberty</p>
+                  <p class="opacity-low">Attraction</p>
+                </div>
+              </div>
+            </div>
+            <div class="img-box">
+              <img src="https://www.nycgo.com/images/venues/189/topoftherock_jendavis_img_7581.jpg" alt="" />
+              <div class="transparent-box">
+                <div class="caption">
+                  <p>Top of the Rock Observation Deck </p>
+                  <p class="opacity-low">Attraction</p>
+                </div>
+              </div> 
+            </div>
+            <div class="img-box">
+              <img src="https://images.nycgo.com/image/fetch/q_auto:eco,c_fill,f_auto,w_780,g_north/https://www.nycgo.com/images/venues/3607/_mg_3459.jpg" alt="" />
+              <div class="transparent-box">
+                <div class="caption">
+                  <p>The Mercury Lounge</p>
+                  <p class="opacity-low">Nightlife</p>
+                </div>
+              </div> 
+            </div>
+            <div class="img-box">
+              <img src="https://www.nycgo.com/images/events/70051/pride-brookfield-place-lower-manhattan-nyc-thrive-15-000272.jpg" alt="" />
+              <div class="transparent-box">
+                <div class="caption">
+                  <p>Brookfield Place</p>
+                  <p class="opacity-low">Shopping</p>
+                </div>
+              </div> 
+            </div>
+         </div>
+
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script>
+         $(function(){
+            $(".toggle").on("click", function(){
+               if($(".menu").hasClass("active")){
+                  $(".menu").removeClass("active");
+                  $(this).find("a").html("<i class='fa-solid fa-bars'></i>");
+               } else {
+                  $(".menu").addClass("active");
+                  $(this).find("a").html("<i class='fa-solid fa-xmark'></i>");
+               }
+            });
+         });
+      </script>
+
+   </body>
+</html>
+
